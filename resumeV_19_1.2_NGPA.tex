@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{graphicx} % this allows for including figure{images} in Latex documents
+\usepackage{subfig} %subfigure environment
+
+
+\begin{document}
+
+
+\begin{figure}[h] % environments always have a begin and end command
+% , !htbp; ! = overrides latex: h=here; t=top; b=bottom; p = special page for floating objects
+
+
+\begin{center}
+\subfloat[Figure of Gudetama in Egg]{\label{fig:gdtma1}
+%\includegraphics[angle=45,width=0.4\textwidth]{gdtma} would rotate image
+\includegraphics[width=0.4\textwidth]{gdtma}
+}
+\quad %seperation command
+\subfloat{\label{fig:gdtma2}
+\includegraphics[width=0.4\textwidth]{gdtma2}
+}
+\quad
+\subfloat{\label{fig:gdtma3}
+\includegraphics[width=0.6\textwidth]{gdtma3}
+} 
+\caption{these are pics of Gudetama}
+\label{fig:gdtma}
+\end{center}
+
+
+\end{figure}
+
+
+\section{Figure}
+If you would like to see a picture of Gudetama, please see figure \ref{fig:gdtma1}
+
+
+\end{document}
